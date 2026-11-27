@@ -32,7 +32,7 @@ public class MainActivity extends BridgeActivity {
    bridgeBuilder.setServerPath(new ServerPath(path==null?ServerPath.PathType.ASSET_PATH:ServerPath.PathType.BASE_PATH,path==null?"public":path));
   } catch(Exception error) { android.util.Log.e("FloatUpdates","Using bundled resources",error);bridgeBuilder.setServerPath(new ServerPath(ServerPath.PathType.ASSET_PATH,"public")); }
   super.onCreate(state);
-  WindowCompat.setDecorFitsSystemWindows(getWindow(), true);
+  WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
   WindowInsetsControllerCompat controller = WindowCompat.getInsetsController(getWindow(), getWindow().getDecorView());
   controller.hide(WindowInsetsCompat.Type.statusBars());
   controller.setSystemBarsBehavior(WindowInsetsControllerCompat.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE);
