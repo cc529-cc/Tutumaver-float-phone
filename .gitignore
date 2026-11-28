@@ -56,3 +56,5 @@ tools/weixin-local-assistant/config.txt
 
 # Optional local Apple font is excluded from source uploads.
 /public/fonts/phone-lock/apple-built-in.woff
+.prisma-composer/
+.alchemy/
